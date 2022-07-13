@@ -1,0 +1,46 @@
+"0","install.packages('janitor')"
+"2","Installing package into ‘C:/Users/nico-/AppData/Local/R/win-library/4.2’
+(as ‘lib’ is unspecified)
+"
+"2","also installing the dependency ‘snakecase’
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.2/snakecase_0.11.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 166540 bytes (162 KB)
+"
+"2","downloaded 162 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.2/janitor_2.1.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 252826 bytes (246 KB)
+"
+"2","downloaded 246 KB
+
+"
+"1","package ‘snakecase’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘janitor’ successfully unpacked and MD5 sums checked
+"
+"1","
+"
+"1",""
+"1","The downloaded binary packages are in
+	C:\Users\nico-\AppData\Local\Temp\Rtmp0eRcX1\downloaded_packages"
+"1",""
+"1","
+"
+"0","library(janitor)"
+"2","Warning: package ‘janitor’ was built under R version 4.2.1"
+"2","
+Attaching package: ‘janitor’
+
+"
+"2","The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+"

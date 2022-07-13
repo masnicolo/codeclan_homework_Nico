@@ -1,0 +1,4 @@
+"0","video_game <- read.csv(""data/steam-200k-sample.csv"")"
+"2","Warning: cannot open file 'data/steam-200k-sample.csv': No such file or directory"
+"2","Error in file(file, ""rt"") : cannot open the connection
+"

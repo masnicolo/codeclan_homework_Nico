@@ -1,0 +1,26 @@
+"0","install.packages('devtools') # ?"
+"2","Installing package into ‘C:/Users/nico-/AppData/Local/R/win-library/4.2’
+(as ‘lib’ is unspecified)
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.2/devtools_2.4.3.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 423598 bytes (413 KB)
+"
+"2","downloaded 413 KB
+
+"
+"1","package ‘devtools’ successfully unpacked and MD5 sums checked
+"
+"1","
+"
+"1",""
+"1","The downloaded binary packages are in
+	C:\Users\nico-\AppData\Local\Temp\Rtmp0eRcX1\downloaded_packages"
+"1",""
+"1","
+"
+"0","devtools::install_github('codeclan/CodeClanData')"
+"2","Skipping install of 'CodeClanData' from a github remote, the SHA1 (5ad4a761) has not changed since last install.
+  Use `force = TRUE` to force installation
+"

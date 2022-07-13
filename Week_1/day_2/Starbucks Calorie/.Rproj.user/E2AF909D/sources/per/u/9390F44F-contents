@@ -1,0 +1,58 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+library(CodeClanData)
+```
+```{r}
+drinks_content
+```
+
+```{r}
+select(drinks_content, Beverage_category, Beverage, Beverage_prep, Calories)
+```
+
+```{r}
+select(drinks_content, contains("NA"))
+```
+
+```{r}
+mutate(drinks_content, calorie_diff = calories - 135)
+```
+
+```{r}
+mutate(drinks_content, calorie_diff = calories - 135)
+```
+
+```{r}
+is.na(drinks_content)
+```
+
+```{r}
+view("beverage_category")
+```
+
+```{r}
+mean("beverage_category")
+```
+```{r}
+summarise(drinks_content, "beverage_category")
+```
+
+```{r}
+summary(drinks_content)
+```
+
+```{r}
+head(drinks_content, "calories")
+```
+
+
+
+

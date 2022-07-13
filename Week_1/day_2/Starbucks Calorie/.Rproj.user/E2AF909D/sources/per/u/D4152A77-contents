@@ -1,0 +1,40 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(janitor)
+```
+
+```{r}
+video_game <- read.csv('data/steam-200k-sample.csv')
+```
+```{r}
+install.packages('devtools') # ?
+devtools::install_github('codeclan/CodeClanData')
+```
+```{r}
+library(tidyverse)
+```
+
+```{r}
+library(janitor)
+```
+```{r}
+video_game <- read.csv("data/steam-200k-sample.csv")
+```
+
+```{r}
+install.packages('janitor')
+library(janitor)
+```
+
+```{r}
+video_game <- read.csv("data/steam-200k-sample.csv")
+```
+
+"  
+```{r}
+""
+```
