@@ -1,0 +1,101 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+```
+```{r}
+library(dplyr)
+```
+
+
+```{r}
+books <- read_csv("../weekend_homework/books.csv")
+```
+
+```{r}
+# dimensions of dataset 
+#dataset has 1127 rows and 13 columns
+dim(books)
+```
+
+```{r}
+view(books)
+
+```
+
+```{r}
+#number of missing values
+#good news the dataset has 0 missing values
+sum(is.na(books))
+```
+```{r}
+nrow(books) - nrow(drop_na(books))
+```
+
+```{r}
+#find the highest and least 5 rated books
+books %>% slice_max(average_rating, n = 5) 
+```
+```{r}
+books %>%  slice_min(average_rating, n=5)
+##overall it's not possible to find 5 specific most and least ranked books. There are more than 5 books ranked 0 (lowest value) or 5 highest value
+```
+
+```{r}
+## all the book languages
+books %>% 
+  distinct(language_code) 
+```
+
+
+
+
+```{r}
+books %>% 
+  names()
+```
+
+```{r}
+##I would like to know how many books in my entire set are rated 5
+books %>% 
+  summarise(average_rating) %>%  
+  count(average_rating == 5)
+```
+
+```{r}
+##I would like to know how many books are rated 0 in my dataset
+books %>% 
+summarise(average_rating) %>%  
+  count(average_rating == 0)
+```
+
+```{r}
+books %>% 
+  names()
+```
+
+```{r}
+## filtering the highest rated books
+books %>% 
+  filter(average_rating == 5)
+```
+
+
+
+
+
+```{r}
+# Top 10 books with the highest average rating and rating count
+
+top_10_books <- books %>%
+  select(title, average_rating, ratings_count) %>% 
+  filter(ratings_count >= 10000) %>% 
+  slice_max(average_rating, n = 10, with_ties = FALSE)
+
+top_10_books
+```
+
+
